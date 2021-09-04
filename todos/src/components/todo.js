@@ -5,11 +5,10 @@ function Todo(props) {
     return(
         <div className='card'>
             <div className='content'>
-                <h3>Dummy message</h3>
-                <p>{props.todo}</p>
-            </div>
+             <h3 style={{paddingTop: 10}}>Dummy message ⏰</h3>
+             <p className='txtmsg'>{props.todo}</p>
         </div>
-        
+    </div> 
     );
 }
 

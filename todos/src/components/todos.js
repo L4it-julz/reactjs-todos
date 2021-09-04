@@ -3,7 +3,7 @@
  import Todo from './todo';
 
  const Todos = () => {
-    const [todos, setTodos] = useState(['hi', 'hello']);
+    const [todos, setTodos] = useState(['the dog walk over the moon', 'cat are crazy']);
     const [input, setInput] = useState('');
     console.log(input)
 
@@ -13,9 +13,9 @@
     }
      return (
        <div>
-            <TextInput value={input} onChange={event => setInput(event.target.value)} />
+        <TextInput value={input} onChange={event => setInput(event.target.value)} />
          <Button onClick={addTodo}>sent</Button>
-         <div style={{paddingLeft:400, paddingRight: 400}}>
+         <div style={{alignItems: 'center'}}>
             {todos.map(list => (
                 <Todo todo={list} />
             ))}
